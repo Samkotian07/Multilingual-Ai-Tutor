@@ -1,0 +1,136 @@
+.modal-overlay1 {
+  position: fixed;
+  top: -196px;
+  left: -164px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  height: 90vh; /* Full height for the overlay */
+  width: 100vh;
+  overflow: hidden; /* Prevents overflow */
+}
+
+.modal-content1 {
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  height: 70vh;
+  color: white;
+  overflow-y: auto;
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+.modal-content1::-webkit-scrollbar {
+    background: transparent; /* Hide scrollbar background */
+  width: 4px;
+}
+
+.modal-content1::-webkit-scrollbar-thumb {
+  background-color: #fff; /* light hint of visibility */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+.modal-content1 h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modal-content1 h3,
+.modal-content1 p,
+.modal-content1 ul {
+  color: white;
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+
+.modal-content1 ul {
+  padding-left: 1.2rem;
+  list-style-type: "✦ ";
+}
+
+.modal-content1 a {
+  color: #00ccff;
+  text-decoration: underline;
+}
+
+
+.cancel-button {
+    position: absolute;
+      transform: translate(-20%, 781%);
+
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+
+.cancel-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+    .modal-overlay1 {
+        top: -230px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 90vh; /* Full height for the overlay */
+        width: 91vw; /* Full width for the overlay */
+    }
+  .modal-content1 {
+    height: auto;
+    max-height: 85vh;
+    width: 90vw; /* Full width for the modal content */
+    padding: 1.5rem;
+    
+  }
+    .cancel-button {
+        position: absolute;
+       
+        transform: translate(-20%,764%); /* Reset transform for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-overlay1 {
+        top: -38vh;
+        left: -9px;
+        right: 0;
+        bottom: 0;
+        height: 87vh; /* Full height for the overlay */
+        width: 95vw; /* Full width for the overlay */
+    }
+    .modal-content1 {
+        height: auto;
+        max-height: 75vh;
+        width: 95vw; /* Full width for the modal content */
+        padding: 1.5rem;
+        padding-bottom: 3.5rem; /* Add padding to the bottom for better spacing */
+    }
+    .cancel-button {
+        position: absolute;
+        
+        transform: translate(-20%, 39vh); /* Reset transform for mobile */
+    }
+}

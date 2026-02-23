@@ -1,0 +1,124 @@
+.voice-assistant-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 65vh;
+  }
+  
+  .visualizer-container {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .control-section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  .conversation {
+    transform: translate(-33%, 18%);
+    scroll-behavior: smooth;
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: scroll;
+    width: 100vh;
+    height: 13vh;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    margin-top: 20px;
+background-color: rgba(0, 0, 0, 0.4); /* change as needed */
+  backdrop-filter: blur(16px); /* optional: blur effect */
+   }
+
+   .conversation::-webkit-scrollbar {
+    width: 8px;
+    background: transparent; /* Hide scrollbar background */
+  }
+  .conversation::-webkit-scrollbar-thumb {
+    background-color: #fff; /* light hint of visibility */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message-agent {
+    color: #7b2c68;
+  }
+  
+  .message-user {
+    color: #173bb2;
+  }
+  
+  .message-text {
+    color: #fff;
+  }
+  
+
+ @media (max-width: 768px) {
+    .voice-assistant-container {
+      margin-top: 160px;
+      padding: 10px;
+      
+    }
+  
+    .visualizer-container {
+      height: 200px;
+    }
+  
+    .control-section {
+      margin-top: 10px;
+       }
+  
+    .conversation {
+      transform: translate(-20%, -10%);
+
+      max-height: 200px;
+      width: 70vh;
+      height: 15vh;
+    }
+  
+    .message {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .bar{
+      position: relative;
+      
+      top: -7vh;
+    }
+    .voice-assistant-container {
+      margin-top: 43vh;
+      padding: 5px;
+    }
+  
+    .visualizer-container {
+      height: 150px;
+    }
+  
+    .control-section {
+      margin-top: 5px;
+    }
+  
+    .conversation {
+      transform: translate(-20%, 2%);
+      max-height: 150px;
+      width: 44vh;
+      height: 12vh;
+    }
+  
+    .message {
+      font-size: 0.8rem;
+    }
+  }
