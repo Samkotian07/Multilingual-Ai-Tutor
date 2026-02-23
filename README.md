@@ -115,24 +115,26 @@ It is built with React and uses LiveKit’s React SDK for voice transport.
 **Backend**
 
 Create a .env file with your API keys:
-
+```
 LIVEKIT_API_KEY=your_livekit_key
 LIVEKIT_API_SECRET=your_livekit_secret
 LIVEKIT_URL=your_livekit_url
 GOOGLE_API_KEY=your_google_gemini_key
 SARVAM_API_KEY=your_sarvam_key
+```
 
-
+```bash
 pip install -r requirements.txt
 python server.py
 python agents.py dev
+```
 
 Frontend
-
+```bash
 cd frontend
 npm install
 npm run dev
-
+```
 
 ***Behind the Scenes***
 
