@@ -122,28 +122,16 @@ LIVEKIT_URL=your_livekit_url
 GOOGLE_API_KEY=your_google_gemini_key
 SARVAM_API_KEY=your_sarvam_key
 
-Install dependencies:
 
 pip install -r requirements.txt
-
-Run the server:
-
 python server.py
+python agents.py dev
+
 Frontend
 
-Go into the frontend folder:
-
 cd frontend
-
-Install dependencies:
-
 npm install
-
-Start the development server:
-
 npm run dev
-
-Open your browser to http://localhost:5173 and start speaking.
 
 
 ***Behind the Scenes***
